@@ -10,15 +10,6 @@ SimpleShape::SimpleShape(vec3 position, vec3 aColour, vec3 dColour, vec3 sColour
 	setShininess(shine);
 }
 
-SimpleShape::SimpleShape()
-{
-	shininess = 0.0f;
-}
-
-
-SimpleShape::~SimpleShape()
-{
-}
 
 
 // Sets the ambient colour of the SimpleShape
