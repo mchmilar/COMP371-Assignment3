@@ -19,3 +19,7 @@ bool Light::isValidColour(vec3 colour)
 		&& colour.y <= 1.0f && colour.x >= 0
 		&& colour.z <= 1.0f && colour.z >= 0;
 }
+
+float Light::intersects(Ray ray) {
+	return 0;
+}

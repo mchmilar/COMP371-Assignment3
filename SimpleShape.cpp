@@ -12,6 +12,8 @@ SimpleShape::SimpleShape(vec3 position, vec3 aColour, vec3 dColour, vec3 sColour
 
 
 
+
+
 // Sets the ambient colour of the SimpleShape
 void SimpleShape::setAmbientColour(vec3 ambientColour)
 {
@@ -51,12 +53,7 @@ void SimpleShape::setSpecularColour(vec3 specularColour)
 // Sets the specular shininess of the SimpleShape
 void SimpleShape::setShininess(float shininess)
 {
-	if (shininess >= 0 && shininess <= 1) {
-		this->shininess = shininess;
-	}
-	else {
-		throw std::invalid_argument("Shininess must be between 0 and 1");
-	}
+	this->shininess = shininess;
 }
 
 
@@ -96,3 +93,4 @@ bool SimpleShape::isValidColour(vec3 colour)
 		&& colour.y <= 1.0f && colour.x >= 0
 		&& colour.z <= 1.0f && colour.z >= 0;
 }
+
